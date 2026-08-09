@@ -137,3 +137,38 @@ body {
     font-size: 0.65rem;
     color: #ef4444;
 }
+/* Ajustes para pantallas pequeñas (Móviles iPhone / Android) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 5px;
+        /* Evita el recorte forzado del margen izquierdo */
+        display: block; 
+    }
+
+    .routine-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        /* Smooth scroll para celulares */
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch;
+        gap: 12px;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Columna fija para el título a la izquierda (o arriba) */
+    .app-main-title {
+        min-width: 180px;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+
+    /* Cada tarjeta de día se ajusta al ancho de pantalla del celular */
+    .day-block {
+        min-width: 85vw; /* Ocupa el 85% del ancho de la pantalla */
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+}
