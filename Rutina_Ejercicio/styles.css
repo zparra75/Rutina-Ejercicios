@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0b111e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.routine-container {
+    width: 100%;
+    max-width: 440px;
+    background-color: #0f172a;
+    border-radius: 18px;
+    padding: 16px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Bloque separado por cada día */
+.day-block {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.day-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Encabezado del día */
+.routine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 4px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-title h1 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #f8fafc;
+}
+
+.exercise-count {
+    background-color: #1e293b;
+    color: #94a3b8;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Tarjetas individuales de ejercicios */
+.exercise-card {
+    background-color: #1a2333;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #283548;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.exercise-title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.badge {
+    background-color: #042f2e;
+    color: #34d399;
+    border: 1px solid #059669;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+}
+
+.weight-info {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    font-style: italic;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.btn-youtube {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #5c1117;
+    color: #fca5a5;
+    border: 1px solid #991b1b;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.btn-youtube:hover {
+    background-color: #7f1d1d;
+    color: #ffffff;
+}
+
+.play-icon {
+    font-size: 0.65rem;
+    color: #ef4444;
+}
