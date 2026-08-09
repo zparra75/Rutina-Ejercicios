@@ -3,7 +3,7 @@
 
 - 🔭 Esta oportunidad les dejo una Rutina de Ejercicios **Rutina vamos 💯**
 
-- 🌱 Realicen Progresiones en Base menos Cargas y Repeteciones
+- 🌱 Realicen Progresiones en Base menos Cargas y Repeticiones
 
 - 💬 Plan de Dieta para bajar Deficit Calorico
 
