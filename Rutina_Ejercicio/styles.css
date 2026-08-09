@@ -137,200 +137,149 @@ body {
     font-size: 0.65rem;
     color: #ef4444;
 }
-/* ========================================== */
-/* ESTILOS CSS PARA LISTA DE COMPRAS Y MENÚ   */
-/* ========================================== */
+/* ========================================================== */
+/* ESTILOS DE MODO OSCURO PARA BLOQUES INFERIORES             */
+/* ========================================================== */
 
-:root {
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
-  --bg-card: #ffffff;
-  --bg-subtle: #f8fafc;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --border-color: #e2e8f0;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --radius-lg: 12px;
-  --radius-md: 8px;
+.seccion-inferior-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-/* Estructura de Secciones */
-.section-container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
+/* Tarjeta contenedora principal (Mismo tono que tu dashboard) */
+.bloque-oscuro {
+  background-color: #121824; /* Color oscuro base del fondo */
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.section-header {
-  margin-bottom: 24px;
-  border-bottom: 2px solid var(--border-color);
+.bloque-header {
+  border-bottom: 1px solid #1e293b;
   padding-bottom: 12px;
+  margin-bottom: 20px;
 }
 
-.section-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
+.bloque-header h2 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.section-title i {
-  color: var(--primary-color);
+.bloque-header h2 i {
+  color: #3b82f6;
 }
 
-.section-subtitle {
-  font-size: 0.95rem;
-  color: var(--text-muted);
+.bloque-header .subtitulo {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  display: block;
   margin-top: 4px;
 }
 
-/* Tabla de Compras */
-.table-responsive {
+/* TABLA OSCURA DE COMPRAS */
+.tabla-responsive {
+  width: 100%;
   overflow-x: auto;
-  background-color: var(--bg-card);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-color);
 }
 
-.custom-table {
+.tabla-oscura {
   width: 100%;
   border-collapse: collapse;
+  color: #e2e8f0;
+  font-size: 0.9rem;
   text-align: left;
-  font-size: 0.95rem;
 }
 
-.custom-table th, 
-.custom-table td {
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border-color);
+.tabla-oscura th, 
+.tabla-oscura td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #1e293b;
 }
 
-.custom-table th {
-  background-color: var(--bg-subtle);
-  color: var(--text-main);
-  font-weight: 600;
+.tabla-oscura th {
+  background-color: #0f172a;
+  color: #94a3b8;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.05em;
 }
 
-.category-row td {
-  background-color: #f1f5f9;
+.tabla-oscura tr.cat-row td {
+  background-color: #1b2436;
+  color: #38bdf8;
   font-weight: 700;
-  color: var(--primary-color);
-  font-size: 1rem;
-  border-top: 2px solid var(--border-color);
+  font-size: 0.95rem;
+  border-top: 2px solid #1e293b;
 }
 
-.price-cell {
-  font-weight: 600;
-  color: #059669;
+.tabla-oscura tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
-.total-row td {
-  background-color: var(--bg-subtle);
-  font-size: 1.05rem;
-  border-top: 2px solid var(--primary-color);
-}
-
-/* Badges / Etiquetas */
-.badge {
+/* Tags / Pills de categorías */
+.tag {
   display: inline-block;
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 3px 10px;
+  border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
-.badge-protein {
-  background-color: #dbeafe;
-  color: #1e40af;
-}
+.tag-prot { background-color: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.tag-carb { background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+.tag-fat  { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.tag-supp { background-color: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
 
-.badge-carb {
-  background-color: #fef3c7;
-  color: #92400e;
-}
-
-.badge-fat {
-  background-color: #dcfce7;
-  color: #166534;
-}
-
-.badge-supp {
-  background-color: #f3e8ff;
-  color: #6b21a8;
-}
-
-/* Grilla del Menú Semanal */
-.menu-grid {
+/* GRID DEL MENÚ SEMANAL */
+.menu-dias-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
 }
 
-.day-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 20px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.dia-card {
+  background-color: #1a2234;
+  border: 1px solid #232f48;
+  border-radius: 8px;
+  padding: 16px;
 }
 
-.day-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.day-header {
-  font-size: 1.2rem;
+.dia-title {
+  color: #38bdf8;
   font-weight: 700;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--bg-subtle);
-  padding-bottom: 10px;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.meal-group {
+  font-size: 1rem;
+  border-bottom: 1px solid #232f48;
+  padding-bottom: 8px;
   margin-bottom: 12px;
+  letter-spacing: 0.05em;
 }
 
-.meal-group:last-child {
-  margin-bottom: 0;
-}
-
-.meal-title {
+.comida-item {
   font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 2px;
-}
-
-.meal-desc {
-  font-size: 0.95rem;
-  color: var(--text-main);
+  color: #cbd5e1;
+  margin-bottom: 10px;
   line-height: 1.4;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-  .custom-table th:nth-child(1),
-  .custom-table td:nth-child(1) {
-    display: none;
-  }
+.comida-item:last-child {
+  margin-bottom: 0;
+}
+
+.comida-tipo {
+  color: #f8fafc;
+  font-weight: 600;
+  display: block;
 }
 
 
