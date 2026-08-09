@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, Mi nombre es Dimas Daniel Gonzalez Parra</h1>
 <h3 align="center">Soy un Consultor SAP FI / ABAP Cloud Jr y Contador Pùblico, con disciplina y apasionado a las nuevas tecnologias SAP</h3>
 
-- 🔭 Esta oprtunidad les dejo una Rutina de Ejercicios **Rutina vamos 💯**
+- 🔭 Esta oportunidad les dejo una Rutina de Ejercicios **Rutina vamos 💯**
 
 - 🌱 Realicen Progresiones en Base menos Cargas y Repeteciones
 
